@@ -11,7 +11,7 @@ class TestAdmin(unittest.TestCase):
     def setUp(self): 
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
         
-    def TC_006(self): #open the sub menu user
+    def test_TC_006(self): #open the sub menu user
 
         driver = self.driver
         driver.get("https://opensource-demo.orangehrmlive.com") # open the site
@@ -28,7 +28,7 @@ class TestAdmin(unittest.TestCase):
         time.sleep(2)
 
 
-    def TC_007(self): #search existing user
+    def test_TC_007(self): #search existing user
 
         driver = self.driver
         driver.get("https://opensource-demo.orangehrmlive.com") # open the site
