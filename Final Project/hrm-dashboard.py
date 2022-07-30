@@ -20,9 +20,7 @@ class Dashboard(unittest.TestCase):
         driver.find_element(By.ID,"txtPassword").send_keys("admin123") # fill password
         time.sleep(2)
         driver.find_element(By.XPATH,"/html/body/div[1]/div/div[3]/div[2]/div[2]/form/div[5]/input").click() #click the login button
-        time.sleep(2)
-        driver.find_element(By.XPATH,"/html/body/div[1]/div[2]/ul/li[8]/a").click() #open the dashboard
-        time.sleep (1)
+        time.sleep(2) #1st login is automatically dashboard
 
 if __name__ == "__main__": 
     unittest.main()
