@@ -5,7 +5,7 @@ sanberscode final project
 
 Final Project Consist of 
 - Test Cases and the Test result 
-- Automantion Script
+- Automation Script
 
 > [Test Case](https://docs.google.com/spreadsheets/d/1uhBEBJ7soUYe2PmfBGR71Qb5tk56AP-Zo2PgCUamt6I/edit?usp=sharing)
 
