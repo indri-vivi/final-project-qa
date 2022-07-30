@@ -11,7 +11,7 @@ class TestLogin(unittest.TestCase):
     def setUp(self): 
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
         
-    def TC_002(self): #login with the correct username and password
+    def test_TC_002(self): #login with the correct username and password
 
         driver = self.driver
         driver.get("https://opensource-demo.orangehrmlive.com") # open the site
@@ -22,7 +22,7 @@ class TestLogin(unittest.TestCase):
         driver.find_element(By.XPATH,"/html/body/div[1]/div/div[3]/div[2]/div[2]/form/div[5]/input").click() #click the login button
         time.sleep(2)
 
-    def TC_005(self): #login with no input 
+    def test_TC_005(self): #login with no input 
 
         driver = self.driver
         driver.get("https://opensource-demo.orangehrmlive.com") # open the site
@@ -33,7 +33,7 @@ class TestLogin(unittest.TestCase):
         self.assertEqual(response_message, "Username cannot be empty") # validate the message
         time.sleep(2)
 
-    def TC_003(self): #login with wrong username
+    def test_TC_003(self): #login with wrong username
 
         driver = self.driver
         driver.get("https://opensource-demo.orangehrmlive.com") # open the site
