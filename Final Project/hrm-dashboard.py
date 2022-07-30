@@ -11,7 +11,7 @@ class Dashboard(unittest.TestCase):
     def setUp(self): 
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
 
-    def TC_030(self): #open the sub menu user
+    def test_TC_030(self): #open the sub menu user
 
         driver = self.driver
         driver.get("https://opensource-demo.orangehrmlive.com") # open the site
