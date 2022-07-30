@@ -11,7 +11,7 @@ class testpim(unittest.TestCase):
     def setUp(self): 
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
         
-    def TC_015(self): #add employee
+    def test_TC_015(self): #add employee
 
         driver = self.driver
         driver.get("https://opensource-demo.orangehrmlive.com") # open the site
@@ -27,7 +27,7 @@ class testpim(unittest.TestCase):
         driver.find_element(By.ID,"firstName").send_keys("virtual") #add first name
         driver.find_element(By.ID,"lastName").send_keys("user")  #add last name
         driver.find_element(By.XPATH,"/html/body/div[1]/div[3]/div/div[2]/form/fieldset/p/input").click() #click save
-
+        time.sleep(2)
 
     def tearDown(self): 
         self.driver.close() 
