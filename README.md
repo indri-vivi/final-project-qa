@@ -1,11 +1,11 @@
-# final-project-qa
-sanberscode final project
+# Orange HRM Open Source Test Case
+Case Project about Testing in platofm Orange HRM open source live platform
 
 # File 
 
-Final Project Consist of 
+Project Consist of 
 - Test Cases and the Test result 
-- Automation Script
+- Automation Script using Python
 
 > [Test Case](https://docs.google.com/spreadsheets/d/1uhBEBJ7soUYe2PmfBGR71Qb5tk56AP-Zo2PgCUamt6I/edit?usp=sharing)
 
